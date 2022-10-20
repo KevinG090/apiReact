@@ -9,6 +9,11 @@
   margin: auto;
   border-collapse: collapse;
 }
+thead {
+  background-color: #213547;
+  color: white;
+}
+
 tr td ,tr th{
   padding: 8px;
 }
