@@ -9,7 +9,7 @@ const GetData = () => {
     const [usuarios, setUsuarios] = useState([''])
     // const url1 = 'https://reqres.in/api/users?page=2'
     const url2 = 'info.txt'
-     axios('https://reqres.in/api/users?page=2')
+     axios('https://reqres.in/api/users?page=2',{headers: {"x-api-key": "reqres-free-v1"})
             .then( (res) => {
                 const response = res.data.data
                 setUsuarios(response)
